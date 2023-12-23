@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Pragmatica-Bold;
+  src: url(../Fonts/Pragmatica-Bold.ttf)
+}
+
+@font-face {
+  font-family: Pragmatica-Book;
+  src: url(../Fonts/Pragmatica-Book.ttf)
+}
+
+@font-face {
+  font-family: Pragmatica-BookOblique;
+  src: url(../Fonts/Pragmatica-BookOblique.ttf)
+}
+
+@font-face {
+  font-family: Pragmatica-ExtraBold;
+  src: url(../Fonts/Pragmatica-ExtraBold.ttf)
+}
+
+@font-face {
+  font-family: Pragmatica-ExtraBoldOblique;
+  src: url(../Fonts/Pragmatica-ExtraBoldOblique.ttf)
+}
+
+@font-face {
+  font-family: Pragmatica-ExtraLightOblique;
+  src: url(../Fonts/Pragmatica-ExtraLightOblique.ttf)
+}
+
+@font-face {
+  font-family: Pragmatica-Light;
+  src: url(../Fonts/Pragmatica-Light.ttf)
+}
+
+@font-face {
+  font-family: Pragmatica-LightOblique;
+  src: url(../Fonts/Pragmatica-LightOblique.ttf)
+}
+
+@font-face {
+  font-family: Pragmatica-MediumOblique;
+  src: url(../Fonts/Pragmatica-MediumOblique.ttf)
+}
+
+@font-face {
+  font-family: Pragmatica-Medium;
+  src: url(../Fonts/PragmaticaMedium.ttf)
+}
+
+@layer base {
+  .btn-primary {
+    @apply py-3 px-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded font-medium cursor-pointer
+  }
+
+  .btn {
+    @apply py-3 px-8 text-black bg-white rounded font-bold cursor-pointer hover:bg-gradient hover:text-white transition-all
+  }
+
+  .bg-gradient {
+    @apply bg-gradient-to-r from-blue-500 to-cyan-500
+  }
+
+  .bg-primary {
+    @apply bg-[#1B1B20]
+  }
+
+  .font-medium {
+    font-family: Pragmatica-Medium;
+  }
+
+  .font-medium-italic {
+    font-family: Pragmatica-MediumOblique;
+  }
+
+  .font-bold {
+    font-family: Pragmatica-Bold;
+  }
+
+  .font-book-italic {
+    font-family: Pragmatica-BookOblique;
+  }
+
+  .font-book {
+    font-family: Pragmatica-Book;
+  }
+
+  .font-extrabold {
+    font-family: Pragmatica-ExtraBold;
+  }
+
+  .font-extrabold-italic {
+    font-family: Pragmatica-ExtraboldOblique;
+  }
+
+  .font-light {
+    font-family: Pragmatica-Light;
+  }
+
+  .font-light-italic {
+    font-family: Pragmatica-LightOblique;
+  }
+
+  .font-extralight-italic {
+    font-family: Pragmatica-ExtraLightOblique;
+  }
+
+  .font-gradient {
+    background: #5981E8;
+    background: linear-gradient(to right, #5981E8 0%, #1CE1DA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .font-ksep {
+    background: #e85959;
+    background: linear-gradient(to left, #e85959 0%, #1c6be1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .active {
+    background: #5981E8;
+    background: linear-gradient(to right, #5981E8 0%, #1CE1DA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @apply transition-all scale-125 font-extrabold-italic
+  }
+
+  .nav-blur {
+    opacity: 75%;
+    backdrop-filter: blur(10px);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75)
+  }
+
+  .text-shadow-none {
+    text-shadow: none;
+  }
+
+  .bg-gradient-down {
+    @apply bg-gradient-to-b from-blue-500 to-cyan-500
+  }
+}
+
